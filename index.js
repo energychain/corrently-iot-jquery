@@ -5,6 +5,8 @@
         this.refresh = function() {
             $.getJSON(api_endpoint+'?account='+parent.attr('data-iot'),function(d) {
                parent.html(d.result.value);
+               parent.attr('title',new Date(d.result.timeStamp).toLocaleString());
+               parent.attr('data-nonce',d.result.nonce);
             });
         }
         this.subscribe = function(seconds) {
