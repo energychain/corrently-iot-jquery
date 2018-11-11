@@ -1,6 +1,6 @@
 {
 	"name": "corrently-iot-jquery",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "JQuery Extension (Plugin) to bind IoT devices to a Corrently UI",
 	"keywords": [
 		"iot",

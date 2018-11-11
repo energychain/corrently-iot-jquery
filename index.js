@@ -7,7 +7,7 @@
                parent.attr('title',new Date(d.result.timeStamp).toLocaleString());
                parent.attr('data-nonce',d.result.nonce);
                parent.attr('data',d.result.value);
-               if(typeof parent.attr('data-multiply') != undefined) {
+               if(typeof parent.attr('data-multiply') != 'undefined') {
                  parent.html(d.result.value*parent.attr('data-multiply'));
                } else {
                  parent.html(d.result.value);
