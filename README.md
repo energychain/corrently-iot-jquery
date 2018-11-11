@@ -7,6 +7,12 @@ JQuery Extension (Plugin) to bind IoT devices to a Corrently UI.
 
 This JQuery extension will replace the html code of a DOM Element with values from an IoT Device. Purpose of this extension to jquery is to easy work with /things-values/ within a corrently based UI/dashboard.
 
+## HTML - Install
+Insert script tag after JQuery Include
+```
+<script src="https://unpkg.com/corrently-iot-jquery@latest/index.js"></script>
+```
+
 ## HTML - Code
 ```
   <span id="yourElement" data-iot="0x12345678" data-subscribe="20">-</span>
