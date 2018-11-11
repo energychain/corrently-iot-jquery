@@ -15,7 +15,12 @@ Insert script tag after JQuery Include
 
 ## HTML - Code
 ```
-  <span id="yourElement" data-iot="0x12345678" data-subscribe="20">-</span>
+  <span class="iot" data-iot="0x12345678" data-subscribe="20">-</span>
+```
+
+## Javascript - Code
+```
+  $.each($('.iot'),function(a,b) { $(b).iot(); });
 ```
 
 ### HTML Attributes
