@@ -16,3 +16,8 @@ This JQuery extension will replace the html code of a DOM Element with values fr
 `data-iot` set the device address
 
 `data-subscribe` refresh value every x seconds
+
+## Contributing
+- https://stromdao.de/
+- https://gitter.im/corrently/Token
+- https://corrently.de/
