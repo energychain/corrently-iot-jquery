@@ -1,6 +1,6 @@
 {
 	"name": "corrently-iot-jquery",
-	"version": "1.0.9",
+	"version": "1.0.12",
 	"description": "JQuery Extension (Plugin) to bind IoT devices to a Corrently UI",
 	"keywords": [
 		"iot",
@@ -13,8 +13,8 @@
 	"bugs": {
 		"url": "https://github.com/energychain/corrently-iot-jquery/issues"
 	},
-	"license": "MIT",
-	"author": "Thorsten Zoerner <thorsten.zoerner@stromdao.com>",
+	"license": "Apache-2.0",
+	"author": "Corrently Corp <support@corrently.com>",
 	"main": "index.js",
 	"repository": {
 		"type": "git",

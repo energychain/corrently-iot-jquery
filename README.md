@@ -13,20 +13,42 @@ Insert script tag after JQuery Include
 <script src="https://unpkg.com/corrently-iot-jquery@latest/index.js"></script>
 ```
 
-## HTML - Code
+## IoT Data
+### HTML - Code
 ```
   <span class="iot" data-iot="0x12345678" data-subscribe="20">-</span>
 ```
 
-## Javascript - Code
+### Javascript - Code
 ```
-  $.each($('.iot'),function(a,b) { $(b).iot(); });
+$(document).ready(function() {
+  $('.iot').iot();
+});
 ```
 
-### HTML Attributes
+#### HTML Attributes
 `data-iot` set the device address
 
 `data-subscribe` refresh value every x seconds
+
+## Corrently Wallet Data
+### HTML - Code
+```
+  <span class="account" data-account="0x12345678" data-field="totalConsumption">-</span>
+```
+
+### Javascript - Code
+```
+$(document).ready(function() {
+  $('.account').account();
+});
+```
+
+#### HTML Attributes
+`data-account` set the wallet account
+
+`data-field` field to set as given by Corrently API Endpoint (meteredconsumption, convertedSupply, generation, ...)
+
 
 ## Contributing
 - https://stromdao.de/
