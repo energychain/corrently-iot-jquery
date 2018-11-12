@@ -1,9 +1,8 @@
 (function ( $ ) {
     $.fn.iot = function() {
      const api_endpoint = 'https://app.corrently.de/api/iot';
-     let parent = this;
-     return this.each(function() {
-
+     return this.each(function(d,e) {
+         let parent = $(e);
         this.refresh = function() {
             $.getJSON(api_endpoint+'?account='+parent.attr('data-iot'),function(d) {
                parent.attr('title',new Date(d.result.timeStamp).toLocaleString());
