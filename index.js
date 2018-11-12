@@ -3,6 +3,7 @@
     let account_cache=[];
     $.fn.account = function() {
      return this.each(function(i,e) {
+       let address = "";
        const displayField = function() {
            let d = account_cache[address];
 
