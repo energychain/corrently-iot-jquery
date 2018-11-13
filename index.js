@@ -2,14 +2,13 @@
     const corrently_api_endpoint = 'https://app.corrently.de/api/';
     let account_cache=[];
     $.fn.account = function() {
-     return this.each(function(i,e) {
-       let address = "";
+     return this.each(function(i,e) {       
        const displayField = function() {
            let d = account_cache[address];
 
        }
         let parent = $(e);
-        if(address == null) address=parent.attr('data-account');
+        let address=parent.attr('data-account');
         if(typeof account_cache[address] == "undefined") {
            $.getJSON(corrently_api_endpoint+'accountInfo?account='+address,function(d) {
                  account_cache[address]=d.result;
