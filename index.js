@@ -1,8 +1,8 @@
 (function ( $ ) {
-    const corrently_api_endpoint = 'https://app.corrently.de/api/';
+    const corrently_api_endpoint = 'https://api.corrently.io/';
     let account_cache=[];
     $.fn.account = function() {
-     return this.each(function(i,e) {       
+     return this.each(function(i,e) {
        const displayField = function() {
            let d = account_cache[address];
 

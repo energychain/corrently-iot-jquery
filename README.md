@@ -51,6 +51,6 @@ $(document).ready(function() {
 
 
 ## Contributing
-- https://stromdao.de/
+- https://corrently.io/
 - https://gitter.im/corrently/Token
 - https://corrently.de/
